@@ -1,0 +1,1 @@
+from myfitnesspal_scraper import MyFitnessPalScraper
