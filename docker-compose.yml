@@ -1,0 +1,10 @@
+storage:
+  image: elasticsearch:latest
+  command: "elasticsearch -Des.network.bind_host=0.0.0.0"
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+  labels:
+    "com.stayontop.type": "storage"
+  volumes:
+    - ./es/config:/usr/share/elasticsearch/config
